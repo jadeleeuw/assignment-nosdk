@@ -12,12 +12,6 @@ public class Main {
     public static void main(String[] args) {
         Main.initObjectMapper();
         new ExperimentEnvironment().solve();
-
-        try {
-            System.out.println(Example.distanceBetween(1130606, 1130522, 1598253172));
-        } catch (UnirestException e) {
-            e.printStackTrace();
-        }
     }
 
     public static void initObjectMapper() {
